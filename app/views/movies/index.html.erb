@@ -29,7 +29,7 @@
         <td><%= movie.description %></td>
         <td><%= movie.director_id %></td>
         <td>
-          <a href="/movies/<%= movie.id %>" class="btn btn-primary">
+          <a href="/movies/show/<%= movie.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
           </a>
         </td>
@@ -47,4 +47,3 @@
     <% end %>
   </tbody>
 </table>
-
