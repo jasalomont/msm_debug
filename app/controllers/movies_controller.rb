@@ -20,7 +20,7 @@ class MoviesController < ApplicationController
     m.duration = params[:the_duration]
     m.description = params[:the_description]
     m.image_url = params[:the_image_url]
-    m.director_id = params[:the_director_id]
+    m.director_id = params[:director_id]
     m.save
 
     redirect_to("/movies/show/#{m.id}")
@@ -45,7 +45,7 @@ class MoviesController < ApplicationController
 
   def destroy
     @movie = Movie.find(params[:id])
-    
+
     m = Movie.find(params[:id])
     m.destroy
     render("movies/destroy.html.erb")

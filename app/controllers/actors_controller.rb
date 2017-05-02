@@ -36,7 +36,7 @@ class ActorsController < ApplicationController
 
     @actor.save
 
-    render("show")
+    render("actors/show.html.erb")
   end
 
   def destroy
